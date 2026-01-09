@@ -116,7 +116,7 @@ def add_loan():
     if not book:
         return {"message": "해당 책을 찾을 수 없습니다."}, 404
     if book.total_copies <= 0:
-        return {"message": "현재 대여 가능한 재고가 없습니다."}, 400
+        return {"message": "현재 대여여 가능한 재고가 없습니다."}, 400
     new_loan = Loan(user_id=user_id, book_id=book_id)
     book.total_copies -= 1
     db.session.add(new_loan)
