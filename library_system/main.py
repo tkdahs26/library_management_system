@@ -116,12 +116,12 @@ def add_loan():
     if not book:
         return {"message": "해당 책을 찾을 수 없습니다."}, 404
     if book.total_copies <= 0:
-        return {"message": "현재 대출 가능한 재고가 없습니다."}, 400
+        return {"message": "현재 대여 가능한 재고가 없습니다."}, 400
     new_loan = Loan(user_id=user_id, book_id=book_id)
     book.total_copies -= 1
     db.session.add(new_loan)
     db.session.commit()
-    return {"message": "대출이 완료되었습니다."}, 201
+    return {"message": "대여 완료되었습니다."}, 201
 
 @app.route('/users/me/loans', methods=['GET'])
 def get_my_loans():
