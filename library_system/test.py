@@ -34,7 +34,7 @@ def run_tests():
     search_response = requests.get(f"{base_url}/books?category=Programming&available=true")
     print("Search Result:", search_response.json())
 
-    borrow_data = {"book_id": 1, "user_id": 1}
+    borrow_data = {"book_id": 2, "user_id": 2}
     borrow_response = requests.post(f"{base_url}/loans", json=borrow_data, headers=headers)
     print("Borrow Response:", borrow_response.json())
 
