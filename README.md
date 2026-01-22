@@ -1,7 +1,7 @@
 # library_management_system
 
 
-Flask와 파이참 인터페이스를 활용한 SQLite를 기반으로 한 RESTful API 도서관 관리 시스템입니다. <br>
+면접과제 : Flask와 파이참 인터페이스를 활용한 SQLite를 기반으로 한 RESTful API 도서관 관리 시스템입니다. <br>
 사용자 인증, 도서 등록 및 조회, 대출 관리 기능을 포함하고 있습니다.
 <br><br>
 
